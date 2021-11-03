@@ -6,7 +6,7 @@ set fileencoding=utf-8
 set scrolloff=4                    
 
 " Status
-set laststatus=2
+set laststatus=1
 set noshowmode
 
 " Line
