@@ -7,6 +7,8 @@ set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --no-ignore-vcs --follow --glob
 set -gx GOPATH $HOME/.go
 set -gx PATH $PATH /usr/local/go/bin $GOPATH $HOME/.local/bin
 set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
+set VISUAL vim
+set EDITOR $VISUAL
 
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cp 'cp -riv'
