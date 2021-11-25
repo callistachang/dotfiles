@@ -5,6 +5,10 @@ set encoding=utf-8
 set fileencoding=utf-8
 set scrolloff=4                    
 
+" Panes
+set splitright
+set splitbelow
+
 " Status
 set laststatus=2
 set noshowmode
@@ -36,3 +40,10 @@ set noerrorbells
 set noswapfile
 set nobackup
 set nowritebackup
+
+" Aesthetic
+set t_Co=256
+syntax on
+set showtabline=2
+set termguicolors
+set background=dark

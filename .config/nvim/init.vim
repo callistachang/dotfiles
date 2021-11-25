@@ -1,34 +1,26 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdcommenter'
-Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
+Plug 'mengelbrecht/lightline-bufferline'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 source ~/.config/nvim/general.vim
 source ~/.config/nvim/nerdcommenter.vim
+source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/fzf.vim
+source ~/.config/nvim/vim-go.vim
+source ~/.config/nvim/lightline.vim
+"source ~/.config/nvim/vim-fugitive.vim
 
 colorscheme gruvbox 
+let g:gruvbox_contrast_dark='hard'
 
-let g:lightline = {
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-    \ },
-    \ 'component_function': {
-    \   'gitbranch': 'FugitiveHead'
-    \ },
-    \ }
-
-" let g:coc_global_extensions = [
-"     \ 'coc-json',
-"     \ 'coc-css',
-"     \ 'coc-rust-analyzer',
-"     \ 'coc-html',
-"     \ 'coc-
