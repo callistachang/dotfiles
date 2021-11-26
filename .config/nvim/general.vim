@@ -43,7 +43,6 @@ set nowritebackup
 
 " Aesthetic
 set t_Co=256
-syntax on
 set showtabline=2
 set termguicolors
 set background=dark
