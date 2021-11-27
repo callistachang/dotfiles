@@ -18,4 +18,4 @@ alias ll 'ls -GFhl'
 alias mkdir 'mkdir -vp'
 alias mv 'mv -iv'
 alias vi nvim
-alias vim nvi
+alias vim nvim

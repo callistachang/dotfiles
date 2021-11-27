@@ -1,11 +1,11 @@
 " ;+r for "go run"
-autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nmap ,r <Plug>(go-run)
 
 " ;+j or ;+k to move between error buffers, 
 " ;+x to close buffer
-map <leader>j :cnext<CR>
-map <leader>k :cprevious<CR>
-nnoremap <leader>x :cclose<CR>
+map ,j :cnext<CR>
+map ,k :cprevious<CR>
+nnoremap ,x :cclose<CR>
 
 " ;+b for "go build" or "go test"
 function! s:build_go_files()
@@ -16,7 +16,7 @@ function! s:build_go_files()
         call go#cmd#Build(0)
     endif
 endfunction
-autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+autocmd FileType go nmap ,b :<C-u>call <SID>build_go_files()<CR>
 
 set autowrite
 let g:go_list_type='quickfix'
