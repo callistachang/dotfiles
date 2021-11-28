@@ -1,13 +1,13 @@
-" ;+r for "go run"
+" ,+r for "go run"
 autocmd FileType go nmap ,r <Plug>(go-run)
 
-" ;+j or ;+k to move between error buffers, 
-" ;+x to close buffer
+" ,+j or ,+k to move between error buffers, 
+" ,+x to close buffer
 map ,j :cnext<CR>
 map ,k :cprevious<CR>
 nnoremap ,x :cclose<CR>
 
-" ;+b for "go build" or "go test"
+" ,+b for "go build" or "go test"
 function! s:build_go_files()
     let l:file = expand('%')
     if l:file =~# '^\f\+_test\.go$'

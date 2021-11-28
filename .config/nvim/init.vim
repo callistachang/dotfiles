@@ -9,6 +9,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'morhetz/gruvbox'
+Plug 'TovarishFin/vim-solidity'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 call plug#end()
 
 source ~/.config/nvim/general.vim
@@ -18,9 +20,7 @@ source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/vim-go.vim
+source ~/.config/nvim/vim-python.vim
 source ~/.config/nvim/lightline.vim
+source ~/.config/nvim/colorscheme.vim
 "source ~/.config/nvim/vim-fugitive.vim
-
-colorscheme gruvbox 
-let g:gruvbox_contrast_dark='hard'
-
