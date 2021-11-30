@@ -1,18 +1,39 @@
 {
-  "languageserver": {
-    "solidity": {
-      "command": "/usr/bin/solc-linux64",
-      "args": ["--lsp"],
-      "trace.server": "verbose",
-      "rootPatterns": [".git/"],
-      "filetypes": ["solidity"]
-    }
-  },
-  "python.pythonPath": "/usr/bin/python3",
-  "python.formatting.provider": "black",
-  "python.analysis.diagnosticSeverityOverrides": {
-    "reportGeneralTypeIssues": "none"
-  },
-  "python.linting.mypyEnabled": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python", "solidity", "json"]
+    "languageserver": {
+        "solidity": {
+            "command": "/usr/bin/solc-linux64",
+            "args": [
+                "--lsp"
+            ],
+            "trace.server": "verbose",
+            "rootPatterns": [
+                ".git/"
+            ],
+            "filetypes": [
+                "solidity"
+            ]
+        },
+        "rust": {
+            "command": "rust-analyzer",
+            "filetypes": [
+                "rust"
+            ],
+            "rootPatterns": [
+                "Cargo.toml"
+            ]
+        }
+    },
+    "diagnostic.errorSign": "✘",
+    "diagnostic.infoSign": "i",
+    "python.pythonPath": "/usr/bin/python3",
+    "python.formatting.provider": "black",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "none"
+    },
+    "python.linting.mypyEnabled": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "solidity",
+        "json"
+    ]
 }
