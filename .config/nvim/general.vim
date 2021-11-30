@@ -1,3 +1,6 @@
+" Misc
+nnoremap ,p :w<CR>:!python3 %<CR>
+
 " File
 set title
 set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
@@ -22,11 +25,15 @@ set relativenumber
 set showmatch
 
 " Indentation
+filetype plugin indent on
 set expandtab                       
 set tabstop=4 
 set softtabstop=4   
 set shiftwidth=4   
+set autoindent
 set smartindent
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
 
 " Search
 set ignorecase    
