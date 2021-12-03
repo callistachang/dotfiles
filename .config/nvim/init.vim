@@ -3,6 +3,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 "Easy commenting
 Plug 'preservim/nerdcommenter'
+"Shows gitdiff in the sign column
+Plug 'airblade/vim-gitgutter'
 "Autocomplete
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 "Fuzzy file finder
@@ -26,6 +28,7 @@ Plug 'TovarishFin/vim-solidity'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 "Integrated terminal
 Plug 'kassio/neoterm'
+"Nice file icons
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
@@ -40,6 +43,5 @@ source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/treesitter.vim
 source ~/.config/nvim/neoterm.vim
-source ~/.config/nvim/vim-fugitive.vim
-set t_RV=
-
+source ~/.config/nvim/fugitive.vim
+source ~/.config/nvim/gitgutter.vim

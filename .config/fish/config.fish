@@ -19,7 +19,6 @@ alias ll 'ls -GFhl --color'
 alias mkdir 'mkdir -vp'
 alias mv 'mv -iv'
 alias ls 'ls --color'
-fzf_configure_bindings --directory=\cf
 
 function vi
     nvim $argv
