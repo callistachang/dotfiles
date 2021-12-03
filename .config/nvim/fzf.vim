@@ -1,17 +1,26 @@
-" Ctrl+f to search for a word
-nnoremap <C-f> :Rg<CR>
+function! FZFOpen(command_str)
+  if (expand('%') =~# 'NERD_tree' && winnr('$') > 1)
+    exe "normal! \<c-w>\<c-w>"
+  endif
+  exe 'normal! ' . a:command_str . "\<cr>"
+endfunction
 
-" Ctrl+p to use FZF
-silent! !git rev-parse --is-inside-work-tree
-if v:shell_error == 0
-  noremap <C-p> :GFiles --cached --others --exclude-standard<CR>
-  noremap <C-o> :GFiles?<CR>
-else
-  noremap <C-p> :Files<CR>
-endif
+function! s:find_files()
+    let git_dir = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+    if git_dir != ''
+        execute 'GFiles' git_dir
+    else
+        execute 'Files'
+    endif
+endfunction
+command! ProjectFiles execute s:find_files()
+
+nnoremap <C-b> :call FZFOpen(':Buffers')<CR>
+nnoremap <C-f> :call FZFOpen(':Rg')<CR>
+nnoremap <C-l> :call FZFOpen(':BLines')<CR>
+nnoremap <C-p> :call FZFOpen(':ProjectFiles')<CR>
 
 let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
-
 
 " Don't consider filenames a match for Rg
 command! -bang -nargs=* Rg 
