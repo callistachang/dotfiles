@@ -23,7 +23,7 @@ noremap <S-h> <C-w>h
 noremap <S-l> <C-w>l
 
 " CTRL+w to close buffer
-nnoremap <C-w> :bd<cr>
+nnoremap <C-w> :bp<cr>:bd #<cr>
 
 nnoremap <C-c> "+y
 vnoremap <C-c> "+y

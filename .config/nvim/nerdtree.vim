@@ -7,7 +7,7 @@ endfunction
 " Ctrl+n to toggle the NERDTree buffer
 nmap <C-n> :call ToggleNerdTree()<CR>
 " Ctrl+b to open up the list of buffers
-nmap <C-b> :Buffers<CR>
+nmap <C-x> :Buffers<CR>
 
 " Check if NERDTree is open or active
 function! IsNERDTreeOpen()
@@ -42,12 +42,14 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
-set autochdir
+autocmd VimEnter * NERDTree | wincmd p
+
+"set autochdir
 let NERDTreeShowHidden=1
 let g:NERDTreeMinimalUI=1
 let g:NERDTreeHijackNetrw=0
-let g:NERDTreeWinSize=28
-let g:NERDTreeWinPos="right"
+let g:NERDTreeWinSize=26
+"let g:NERDTreeWinPos="right"
 let g:NERDTreeChDirMode=2
 let g:NERDTreeAutoDeleteBuffer=1
 "let g:NERDTreeShowBookmarks=1

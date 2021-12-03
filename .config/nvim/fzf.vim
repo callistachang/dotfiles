@@ -10,10 +10,13 @@ else
   noremap <C-p> :Files<CR>
 endif
 
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
+
+
 " Don't consider filenames a match for Rg
 command! -bang -nargs=* Rg 
     \ call fzf#vim#grep(
-    \ "rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, 
+    \ 'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1, 
     \ {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 let g:fzf_colors = {
