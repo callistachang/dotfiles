@@ -6,11 +6,6 @@
       "trace.server": "verbose",
       "rootPatterns": [".git/"],
       "filetypes": ["solidity"]
-    },
-    "rust": {
-      "command": "rust-analyzer",
-      "filetypes": ["rust"],
-      "rootPatterns": ["Cargo.toml"]
     }
   },
   "diagnostic.errorSign": "✘",

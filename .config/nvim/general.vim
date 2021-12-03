@@ -1,6 +1,3 @@
-" Misc
-nnoremap ,p :w<CR>:!python3 %<CR>
-
 " File
 set title
 set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70

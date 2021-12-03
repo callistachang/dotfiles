@@ -19,8 +19,12 @@ nnoremap <C-b> :call FZFOpen(':Buffers')<CR>
 nnoremap <C-f> :call FZFOpen(':Rg')<CR>
 nnoremap <C-l> :call FZFOpen(':BLines')<CR>
 nnoremap <C-p> :call FZFOpen(':ProjectFiles')<CR>
+nnoremap <C-h> :call FZFOpen(':History')<CR>
 
 let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
+
+set ttimeoutlen=0
+autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
 
 " Don't consider filenames a match for Rg
 command! -bang -nargs=* Rg 
