@@ -18,6 +18,13 @@ alias gs 'git status'
 alias ll 'ls -GFhl --color'
 alias mkdir 'mkdir -vp'
 alias mv 'mv -iv'
-alias vi nvim
-alias vim nvim
 alias ls 'ls --color'
+fzf_configure_bindings --directory=\cf
+
+function vi
+    nvim $argv
+end
+
+function vim
+    nvim $argv
+end
