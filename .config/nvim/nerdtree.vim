@@ -41,16 +41,21 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
-"autocmd VimEnter * NERDTree | wincmd p
+autocmd FileType nerdtree setlocal signcolumn=no
+
 
 "set autochdir
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=1
 let g:NERDTreeMinimalUI=1
 let g:NERDTreeHijackNetrw=0
-let g:NERDTreeWinSize=26
+let g:NERDTreeWinSize=24
 "let g:NERDTreeWinPos="right"
-let g:NERDTreeChDirMode=2
+"let g:NERDTreeChDirMode=2
 let g:NERDTreeAutoDeleteBuffer=1
-"let g:NERDTreeShowBookmarks=1
+let g:NERDTreeShowBookmarks=1
 let g:NERDTreeCascadeOpenSingleChildDir=1
 let g:NERDTreeIgnore=['^node_modules$', '^.mypy_cache$', '\.pyc$', '\.gitattributes', '^__pycache__$']
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
+let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+let g:NERDTreeDirArrowExpandable = "\u00a0"
+let g:NERDTreeDirArrowCollapsible = "\u00a0"

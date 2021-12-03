@@ -14,6 +14,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-fugitive'
 "File directory integration
 Plug 'preservim/nerdtree'
+"Git integration with NERDTree
+Plug 'Xuyuanp/nerdtree-git-plugin'
 "Top bufferline
 Plug 'mengelbrecht/lightline-bufferline'
 "Color scheme
@@ -24,6 +26,7 @@ Plug 'TovarishFin/vim-solidity'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 "Integrated terminal
 Plug 'kassio/neoterm'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 source ~/.config/nvim/general.vim
@@ -38,3 +41,5 @@ source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/treesitter.vim
 source ~/.config/nvim/neoterm.vim
 source ~/.config/nvim/vim-fugitive.vim
+set t_RV=
+

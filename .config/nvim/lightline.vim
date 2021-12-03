@@ -10,7 +10,8 @@ let g:lightline = {
       \   'right': [ [] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
+      \   'gitbranch': 'FugitiveHead',
+      \   'filetype': 'MyFiletype',
       \ },
       \ 'component_expand': {
       \   'buffers': 'lightline#bufferline#buffers'
@@ -19,6 +20,10 @@ let g:lightline = {
       \   'buffers': 'tabsel'
       \ }
       \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
 
 nmap ,1 <Plug>lightline#bufferline#go(1)
 nmap ,2 <Plug>lightline#bufferline#go(2)
