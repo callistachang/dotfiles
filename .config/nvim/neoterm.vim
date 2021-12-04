@@ -1,5 +1,5 @@
-"let g:neoterm_default_mod='belowright' " open terminal in bottom split
-let g:neoterm_default_mod='vertical' " open terminal in bottom split
+"let g:neoterm_default_mod='belowright' " open terminal at the bottom
+let g:neoterm_default_mod='vertical' " open terminal to the right
 let g:neoterm_size=50 " terminal split size
 let g:neoterm_autoscroll=1 " scroll to the bottom when running a command
 nnoremap <c-y> :TREPLSendLine<cr>j " send current line and move down

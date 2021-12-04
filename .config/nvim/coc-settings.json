@@ -10,6 +10,7 @@
   },
   "diagnostic.errorSign": "✘",
   "diagnostic.infoSign": "i",
+  "diagnostic.signPriority": 1000,
   "python.pythonPath": "/usr/bin/python3",
   "python.formatting.provider": "black",
   "python.analysis.diagnosticSeverityOverrides": {
