@@ -34,4 +34,3 @@ vnoremap <C-v> "+p
 " Save and source file
 nnoremap <C-s> :w<CR>:so %<CR>
 
-

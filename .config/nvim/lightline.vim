@@ -1,5 +1,5 @@
 let g:lightline#bufferline#show_number = 2
-"let g:lightline#bufferline#unnamed = '[No Name]'
+let g:lightline#bufferline#unnamed = '[No Name]'
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',
       \ 'active': {

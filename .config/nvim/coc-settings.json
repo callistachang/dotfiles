@@ -21,5 +21,6 @@
   "git.changedSign.hlGroup": "GitGutterChange",
   "git.removedSign.hlGroup": "GitGutterDelete",
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
-  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete"
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "suggest.floatEnable": false
 }

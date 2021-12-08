@@ -9,15 +9,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 "Fuzzy file finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-"Golang integration
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'junegunn/fzf.vim' 
 "Git integration
 Plug 'tpope/vim-fugitive'
-"File directory integration
-Plug 'preservim/nerdtree'
-"Git integration with NERDTree
-Plug 'Xuyuanp/nerdtree-git-plugin'
 "Top bufferline
 Plug 'mengelbrecht/lightline-bufferline'
 "Color scheme
@@ -30,15 +24,24 @@ Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'kassio/neoterm'
 "Nice file icons
 Plug 'ryanoasis/vim-devicons'
+"NERDTree, but CHAD
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
+" === CURRENTLY DISABLED ===
+"Golang integration
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'on': [] }
+"File directory integration
+Plug 'preservim/nerdtree', {'on':[] }
+
 call plug#end()
 
+source ~/.config/nvim/chadtree.vim
 source ~/.config/nvim/general.vim
 source ~/.config/nvim/nerdcommenter.vim
-source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/fzf.vim
-source ~/.config/nvim/vim-lang.vim
+"source ~/.config/nvim/vim-lang.vim
 source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/treesitter.vim

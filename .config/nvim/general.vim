@@ -44,7 +44,7 @@ set noerrorbells
 set noswapfile
 set nobackup
 set nowritebackup
-set mouse=a
+set mouse=nv
 
 " Aesthetic
 set t_Co=256
