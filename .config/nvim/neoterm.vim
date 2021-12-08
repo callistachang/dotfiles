@@ -14,6 +14,6 @@ tnoremap <S-k> <c-\><c-n><C-w>k
 tnoremap <Tab> <c-\><c-n>:bnext<CR>
 
 "Automatically enter Terminal mode at the terminal
-autocmd BufWinEnter,WinEnter term://* startinsert
-"au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-
+"autocmd BufWinEnter,WinEnter term://* startinsert
+autocmd BufEnter term://* startinsert
+autocmd BufLeave term://* stopinsert
