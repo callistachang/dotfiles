@@ -1,16 +1,16 @@
 "Integration with filetree
-function! FZFOpen(command_str)
+function! PreventOpenInCHADTree(command_str)
   if (&ft == 'CHADTree' && winnr('$') > 1)
     exe "normal! \<C-w>\<C-w>"
   endif
   exe 'normal! ' . a:command_str . "\<cr>"
 endfunction
 
-nnoremap <C-b> :call FZFOpen(':Buffers')<CR>
-nnoremap <C-f> :call FZFOpen(':Rg')<CR>
-nnoremap <C-l> :call FZFOpen(':BLines')<CR>
-nnoremap <C-p> :call FZFOpen(':Files')<CR>
-nnoremap <C-h> :call FZFOpen(':History')<CR>
+nnoremap <C-b> :call PreventOpenInCHADTree(':Buffers')<CR>
+nnoremap <C-f> :call PreventOpenInCHADTree(':Rg')<CR>
+nnoremap <C-l> :call PreventOpenInCHADTree(':BLines')<CR>
+nnoremap <C-p> :call PreventOpenInCHADTree(':Files')<CR>
+nnoremap <C-h> :call PreventOpenInCHADTree(':History')<CR>
 
 function! RipgrepFzf(query, fullscreen)
   let command_fmt = 'rg --column --no-filename --hidden --line-number --no-heading --color=always --smart-case %s -g "!{node_modules/*,.git/*,**/plugged/*,**/__pycache__/*,*.pyc,build/*}"'

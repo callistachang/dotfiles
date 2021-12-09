@@ -35,12 +35,12 @@ Plug 'preservim/nerdtree', {'on':[] }
 
 call plug#end()
 
+source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/chadtree.vim
 source ~/.config/nvim/general.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/coc.vim
-source ~/.config/nvim/fzf.vim
 "source ~/.config/nvim/vim-lang.vim
 source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/colorscheme.vim
