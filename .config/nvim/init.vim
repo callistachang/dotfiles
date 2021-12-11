@@ -1,37 +1,50 @@
 call plug#begin('~/.config/nvim/plugged')
-"Status line
+
+"======== AESTHETIC ========
+"Pretty status line
 Plug 'itchyny/lightline.vim'
-"Easy commenting
-Plug 'preservim/nerdcommenter'
-"Shows gitdiff in the sign column
-Plug 'airblade/vim-gitgutter'
-"Autocomplete
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-"Fuzzy file finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim' 
-"Git integration
-Plug 'tpope/vim-fugitive'
-"Top bufferline
+"Top buffer line
 Plug 'mengelbrecht/lightline-bufferline'
 "Color scheme
 Plug 'morhetz/gruvbox'
-"Solidity integration
-Plug 'TovarishFin/vim-solidity'
-"Better syntax highlighting
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-"Integrated terminal
-Plug 'kassio/neoterm'
+"Side folder tree
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 "Nice file icons
 Plug 'ryanoasis/vim-devicons'
-"NERDTree, but CHAD
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
+"======== UTILITY ========
+"Ctrl+/ to comment
+Plug 'preservim/nerdcommenter'
+
+"Ctrl+P to find files
+"Ctrl+F to search folderwide
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim' 
+
+"LSP and autocompletion
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
+"Pane and window switching
+Plug 'christoomey/vim-tmux-navigator'
+
+"Syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
+"======== GIT ========
+"Git integration
+Plug 'tpope/vim-fugitive'
+
+"Shows git stuff in the sign column
+Plug 'airblade/vim-gitgutter'
+
+"======== LANGUAGE ========
+"Solidity integration
+Plug 'TovarishFin/vim-solidity'
 
 " === CURRENTLY DISABLED ===
-"Golang integration
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'on': [] }
-"File directory integration
-Plug 'preservim/nerdtree', {'on':[] }
+Plug 'preservim/nerdtree', { 'on': [] }
+Plug 'kassio/neoterm', { 'on' : [] }
 
 call plug#end()
 
@@ -40,11 +53,9 @@ source ~/.config/nvim/chadtree.vim
 source ~/.config/nvim/general.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/keybindings.vim
-source ~/.config/nvim/coc.vim
-"source ~/.config/nvim/vim-lang.vim
 source ~/.config/nvim/lightline.vim
-source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/treesitter.vim
-source ~/.config/nvim/neoterm.vim
 source ~/.config/nvim/fugitive.vim
+source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/gitgutter.vim
+source ~/.config/nvim/coc.vim

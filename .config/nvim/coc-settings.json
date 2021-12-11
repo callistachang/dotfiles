@@ -11,6 +11,10 @@
   "diagnostic.errorSign": "✘",
   "diagnostic.infoSign": "i",
   "diagnostic.signPriority": 1000,
+  "diagnostic.messageTarget": "echo",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextPrefix": "    ⬛",
+  "diagnostic.virtualTextCurrentLineOnly": false,
   "python.pythonPath": "/usr/bin/python3",
   "python.formatting.provider": "black",
   "python.analysis.diagnosticSeverityOverrides": {
@@ -21,6 +25,5 @@
   "git.changedSign.hlGroup": "GitGutterChange",
   "git.removedSign.hlGroup": "GitGutterDelete",
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
-  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
-  "suggest.floatEnable": false
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete"
 }

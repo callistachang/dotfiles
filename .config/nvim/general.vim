@@ -1,6 +1,5 @@
 " File
 set title
-set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
 set encoding=utf-8
 set fileencoding=utf-8
 set scrolloff=4                    
@@ -38,7 +37,7 @@ set smartcase
 set incsearch   
 
 " Vim
-syntax on
+"syntax on
 set hidden                          
 set noerrorbells
 set noswapfile
@@ -50,4 +49,5 @@ set mouse=nv
 set t_Co=256
 set showtabline=2
 set termguicolors
-set background=dark
+"set background=dark
+set mouse=a

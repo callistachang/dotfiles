@@ -1,6 +1,10 @@
-if status is-interactive
+if status is-interactive 
 and not set -q TMUX
     exec tmux
+end
+
+if set -q VIRTUAL_ENV
+    echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
 end
 
 set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --no-ignore-vcs --follow --glob '!.git'"
