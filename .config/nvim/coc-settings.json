@@ -5,7 +5,7 @@
   "diagnostic.hintSign": "H",
   "diagnostic.messageTarget": "echo",
   "diagnostic.virtualText": true,
-  "diagnostic.virtualTextPrefix": "   ⬛",
+  "diagnostic.virtualTextPrefix": "    ⬛",
   "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.enableHighlightLineNumber": false,
 

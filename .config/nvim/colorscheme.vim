@@ -8,24 +8,25 @@ let g:gruvbox_invert_selection='0'
 set background=dark
 colorscheme gruvbox
 
-highlight! link NonText GruvboxBg2
-highlight ColorColumn ctermbg=0 guibg=grey
-highlight SignColumn guibg=none
-highlight CursorLineNR guibg=None
-"highlight Normal guibg=none
-highlight LineNr guifg=#83a598
+hi! link NonText GruvboxBg2
+hi ColorColumn ctermbg=0 guibg=grey
+hi SignColumn guibg=none
+hi CursorLineNR guibg=None
+"hi Normal guibg=none
+hi LineNr guifg=#83a598
 
-highlight CocErrorVirtualText guifg=#83a598
-highlight CocWarningVirtualText guifg=#90be7e 
-highlight CocInfoVirtualText guifg=#90be7e 
-highlight CocHintVirtualText guifg=#90be7e
+"hi CocErrorVirtualText guifg=#fa5c4b 
+hi! link CocErrorVirtualText GruvboxRed
+hi! link CocWarningVirtualText GruvboxOrange
+hi! link CocInfoVirtualText GruvboxBlue
+hi! link CocHintVirtualText GruvboxBlue
 
-highlight! link GitGutterAdd GruvboxAquaSign
-highlight! link GitGutterChange GruvboxYellowSign
-highlight! link GitGutterChangeDelete GruvboxYellowSign 
-highlight! link GitGutterDelete GruvboxRedSign
+hi! link GitGutterAdd GruvboxGreenSign
+hi! link GitGutterChange GruvboxYellowSign
+hi! link GitGutterChangeDelete GruvboxYellowSign 
+hi! link GitGutterDelete GruvboxRedSign
 
-highlight! link SignColumn LineNr
+hi! link SignColumn LineNr
 
 let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
 let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
