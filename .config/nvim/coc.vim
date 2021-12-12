@@ -1,17 +1,25 @@
 let g:coc_global_extensions = [
       \ 'coc-tabnine',
       \ 'coc-tsserver',
+      \ 'coc-tslint-plugin',
+      \ 'coc-eslint',
+      \ 'coc-prettier',
       \ 'coc-html',
+      \ 'coc-rust-analyzer',
+      \ 'coc-htmldjango',
+      \ 'coc-pairs',
+      \ 'coc-git',
       \ 'coc-sh',
+      \ 'coc-emmet',
+      \ 'coc-pyright',
       \ 'coc-css',
       \ 'coc-go',
       \ 'coc-json',
-      \ 'coc-eslint',
-      \ 'coc-python',
       \ 'coc-yaml',
       \ 'coc-highlight',
       \ 'coc-snippets',
       \ 'coc-docker',
+      \ 'coc-vimlsp',
       \]
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
@@ -30,7 +38,7 @@ set nowritebackup
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=100
+set updatetime=50
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c

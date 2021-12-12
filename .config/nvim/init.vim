@@ -3,12 +3,16 @@ call plug#begin('~/.config/nvim/plugged')
 "======== AESTHETIC ========
 "Pretty status line
 Plug 'itchyny/lightline.vim'
+
 "Top buffer line
 Plug 'mengelbrecht/lightline-bufferline'
+
 "Color scheme
 Plug 'gruvbox-community/gruvbox'
+
 "Side folder tree
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
 "Nice file icons
 Plug 'ryanoasis/vim-devicons'
 
@@ -16,8 +20,7 @@ Plug 'ryanoasis/vim-devicons'
 "Ctrl+/ to comment
 Plug 'preservim/nerdcommenter'
 
-"Ctrl+P to find files
-"Ctrl+F to search folderwide
+"Ctrl+P to find files, Ctrl+F to search folderwide
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' 
 
@@ -30,21 +33,17 @@ Plug 'christoomey/vim-tmux-navigator'
 "Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
-"======== GIT ========
 "Git integration
 Plug 'tpope/vim-fugitive'
 
-"Shows git stuff in the sign column
-Plug 'airblade/vim-gitgutter'
-
-"======== LANGUAGE ========
 "Solidity integration
 Plug 'TovarishFin/vim-solidity'
 
-" === CURRENTLY DISABLED ===
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'on': [] }
-Plug 'preservim/nerdtree', { 'on': [] }
-Plug 'kassio/neoterm', { 'on' : [] }
+"======== CURRENTLY DISABLED ========
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'on': [] }
+"Plug 'preservim/nerdtree', { 'on': [] }
+"Plug 'kassio/neoterm', { 'on': [] }
+"Plug 'airblade/vim-gitgutter', { 'on' : [] }
 
 call plug#end()
 
