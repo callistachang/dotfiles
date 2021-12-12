@@ -7,7 +7,6 @@ let g:lightline = {
       \ },
       \ 'tabline': {
       \   'left': [ ['buffers'] ],
-      \   'right': [ [] ]
       \ },
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead',

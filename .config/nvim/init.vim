@@ -57,5 +57,4 @@ source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/treesitter.vim
 source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/colorscheme.vim
-"source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/coc.vim
