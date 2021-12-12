@@ -13,7 +13,7 @@ set laststatus=2
 set noshowmode
 
 " Line
-set cursorline
+"set cursorline
 set linebreak
 set nowrap
 set number 
@@ -51,3 +51,4 @@ set showtabline=2
 set termguicolors
 "set background=dark
 set mouse=a
+"set colorcolumn=80

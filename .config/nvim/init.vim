@@ -6,7 +6,7 @@ Plug 'itchyny/lightline.vim'
 "Top buffer line
 Plug 'mengelbrecht/lightline-bufferline'
 "Color scheme
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 "Side folder tree
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 "Nice file icons
@@ -57,5 +57,5 @@ source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/treesitter.vim
 source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/colorscheme.vim
-source ~/.config/nvim/gitgutter.vim
+"source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/coc.vim
