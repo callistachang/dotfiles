@@ -39,6 +39,12 @@ Plug 'tpope/vim-fugitive'
 "Solidity integration
 Plug 'TovarishFin/vim-solidity'
 
+"Solidity integration
+Plug 'TovarishFin/vim-solidity'
+
+"Markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
 "======== CURRENTLY DISABLED ========
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'on': [] }
 "Plug 'preservim/nerdtree', { 'on': [] }
@@ -57,3 +63,5 @@ source ~/.config/nvim/treesitter.vim
 source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/coc.vim
+
+nmap <leader>md <Plug>MarkdownPreviewToggle

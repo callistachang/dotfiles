@@ -8,7 +8,6 @@ let g:coc_global_extensions = [
       \ 'coc-rust-analyzer',
       \ 'coc-htmldjango',
       \ 'coc-pairs',
-      \ 'coc-git',
       \ 'coc-sh',
       \ 'coc-emmet',
       \ 'coc-pyright',

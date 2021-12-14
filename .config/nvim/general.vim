@@ -21,6 +21,8 @@ set relativenumber
 set showmatch
 
 " Indentation
+"filetype plugin indent on
+filetype off
 filetype plugin indent on
 set expandtab                       
 set tabstop=4 
@@ -37,18 +39,18 @@ set smartcase
 set incsearch   
 
 " Vim
-"syntax on
+syntax on
 set hidden                          
 set noerrorbells
 set noswapfile
 set nobackup
 set nowritebackup
-set mouse=nv
+set mouse=a
+set nocompatible
 
 " Aesthetic
 set t_Co=256
 set showtabline=2
 set termguicolors
 "set background=dark
-set mouse=a
 "set colorcolumn=80
