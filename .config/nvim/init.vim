@@ -39,14 +39,16 @@ Plug 'tpope/vim-fugitive'
 "Solidity integration
 Plug 'TovarishFin/vim-solidity'
 
-"Solidity integration
-Plug 'TovarishFin/vim-solidity'
-
 "Markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
+"Prettier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install && yarn add prettier-plugin-solidity' }
+
+"Vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 "======== CURRENTLY DISABLED ========
-"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'on': [] }
 "Plug 'preservim/nerdtree', { 'on': [] }
 "Plug 'kassio/neoterm', { 'on': [] }
 "Plug 'airblade/vim-gitgutter', { 'on' : [] }
@@ -59,9 +61,10 @@ source ~/.config/nvim/general.vim
 source ~/.config/nvim/nerdcommenter.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/lightline.vim
-source ~/.config/nvim/treesitter.vim
-source ~/.config/nvim/fugitive.vim
 source ~/.config/nvim/colorscheme.vim
+source ~/.config/nvim/markdown-preview.vim
+source ~/.config/nvim/nvim-treesitter.vim
+source ~/.config/nvim/vim-fugitive.vim
+source ~/.config/nvim/vim-go.vim
+source ~/.config/nvim/vim-prettier.vim
 source ~/.config/nvim/coc.vim
-
-nmap <leader>md <Plug>MarkdownPreviewToggle
