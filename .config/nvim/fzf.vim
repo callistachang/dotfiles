@@ -20,13 +20,13 @@ command! -bang -nargs=* Rg
   \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 
-nnoremap <C-b> :call PreventOpenInCHADTree(":Buffers")<CR>
-nnoremap <C-f> :call PreventOpenInCHADTree(":Rg")<CR>
-nnoremap <C-p> :call PreventOpenInCHADTree(":Files")<CR>
+"nnoremap <M-b> :call PreventOpenInCHADTree(":Buffers")<CR>
+nnoremap <M-f> :call PreventOpenInCHADTree(":Rg")<CR>
+nnoremap <M-p> :call PreventOpenInCHADTree(":Files")<CR>
 
-inoremap <C-b> <esc> :call PreventOpenInCHADTree(":Buffers")<CR>
-inoremap <C-b> <esc> :call PreventOpenInCHADTree(":Rg")<CR>
-inoremap <C-b> <esc> :call PreventOpenInCHADTree(":Files")<CR>
+"inoremap <C-b> <esc> :call PreventOpenInCHADTree(":Buffers")<CR>
+inoremap <M-b> <esc> :call PreventOpenInCHADTree(":Rg")<CR>
+inoremap <M-b> <esc> :call PreventOpenInCHADTree(":Files")<CR>
 
 let $FZF_DEFAULT_COMMAND="fd --type file --follow --hidden -E .git -E node_modules -E plugged -E __pycache__ -E '*.pyc' -E build"
 let $FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
