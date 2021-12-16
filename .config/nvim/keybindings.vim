@@ -11,10 +11,10 @@ nnoremap <S-TAB> :bprevious<CR>
 nnoremap <C-w> :bp<cr>:bd! #<cr>
 
 " Copy and paste in and out of Vim
-nmap <C-c> "*y
-"vnoremap <C-c> "+y
-nmap <C-v> "*p
-"vnoremap <C-v> "+p
+nnoremap <C-c> "*y
+vnoremap <C-c> "*y
+nnoremap <C-v> "*p
+vnoremap <C-v> "*p
 
 " Save and source file
 nnoremap <C-s> :w<CR>:so %<CR>
