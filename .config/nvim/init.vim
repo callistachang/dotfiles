@@ -67,4 +67,5 @@ source ~/.config/nvim/nvim-treesitter.vim
 source ~/.config/nvim/vim-fugitive.vim
 source ~/.config/nvim/vim-go.vim
 source ~/.config/nvim/vim-prettier.vim
+source ~/.config/nvim/vim-tmux-navigator.vim
 source ~/.config/nvim/coc.vim
