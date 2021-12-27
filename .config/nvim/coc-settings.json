@@ -9,9 +9,10 @@
   "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.enableHighlightLineNumber": false,
 
-  "coc.preferences.formatOnSaveFiletypes": ["python"],
-
+  "coc.preferences.formatOnSaveFiletypes": ["python", "rust", "json"],
+  "coc.preferences.rootPatterns": [".git", "poetry.lock", "package-lock.json"],
   "python.pythonPath": "/usr/bin/python3",
+  "python.venvPath": "/mnt/d/wsl-pypoetry/Cache/virtualenvs",
   "python.formatting.provider": "black",
   "python.analysis.diagnosticSeverityOverrides": {
     "reportGeneralTypeIssues": "none"

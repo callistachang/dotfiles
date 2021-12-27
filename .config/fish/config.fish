@@ -12,7 +12,7 @@ if set -q VIRTUAL_ENV
 end
 
 set -gx GOPATH $HOME/.go
-set -gx PATH /usr/local/go/bin $GOPATH $HOME/.local/bin $PATH
+set -gx PATH $PATH /usr/local/go/bin $GOPATH $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.npm-global/bin
 set -gx VISUAL nvim
 set -gx EDITOR $VISUAL
 set -gx LS_COLORS 'tw=00;33:ow=01;33:'

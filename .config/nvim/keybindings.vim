@@ -1,5 +1,8 @@
 let mapleader=","
 
+nnoremap <M-u> <C-u>
+nnoremap <M-d> <C-d>
+
 " jj to return to normal mode
 inoremap jj <ESC>
 
