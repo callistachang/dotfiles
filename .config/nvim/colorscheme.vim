@@ -29,3 +29,14 @@ let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
 let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
+
+"hi Normal guibg=none ctermbg=none
+"hi LineNr guibg=none ctermbg=none
+"hi Folded guibg=none ctermbg=none
+"hi NonText guibg=none ctermbg=none
+"hi SpecialKey guibg=none ctermbg=none
+"hi VertSplit guibg=none ctermbg=none
+"hi SignColumn guibg=none ctermbg=none
+"hi EndOfBuffer guibg=none ctermbg=none
+
+set guifont=FiraCode_Nerd_Font:h14

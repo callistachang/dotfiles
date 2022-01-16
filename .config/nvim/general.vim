@@ -1,7 +1,7 @@
 " File
 set title
-set encoding=utf-8
-set fileencoding=utf-8
+set encoding=UTF-8
+set fileencoding=UTF-8
 set scrolloff=4                    
 
 " Panes
