@@ -1,0 +1,23 @@
+{
+  "segments": [
+    "newline",
+    "time",
+    "virtual_env",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "newline",
+    "root"
+  ],
+  "cwd": {
+  },
+  "vcs": {
+    "show_symbol": true
+  },
+  "theme": "~/.config/powerline-shell/themes/nord.py",
+  "time": {
+    "format": "%H:%M"
+  }
+}
