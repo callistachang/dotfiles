@@ -13,7 +13,7 @@ set laststatus=2
 set noshowmode
 
 " Line
-"set cursorline
+set cursorline
 set linebreak
 set nowrap
 set number 
@@ -46,6 +46,7 @@ set noswapfile
 set nobackup
 set nowritebackup
 set mouse=a
+set mousemodel=popup
 set nocompatible
 
 " Aesthetic
@@ -54,3 +55,20 @@ set showtabline=2
 set termguicolors
 "set background=dark
 "set colorcolumn=80
+
+" Faster scrolling
+set lazyredraw
+set ttyfast
+
+set autowrite
+set undofile
+set shiftround
+set virtualedit=block
+set nojoinspaces
+set nostartofline
+
+" Use clipboard for all delete/yank/change/put operations
+if !empty(provider#clipboard#Executable())
+    set clipboard+=unnamedplus
+endif
+
