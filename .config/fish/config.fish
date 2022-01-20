@@ -11,6 +11,8 @@ if set -q VIRTUAL_ENV
     echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
 end
 
+thefuck --alias | source
+
 set -gx GOPATH $HOME/.go
 set -gx PATH $PATH /usr/local/go/bin $GOPATH $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.npm-global/bin
 set -gx VISUAL nvim
@@ -29,6 +31,7 @@ alias ls 'ls --color=auto'
 function vi
     nvim $argv
 end
+
 
 function vim
     nvim $argv
