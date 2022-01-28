@@ -1,6 +1,4 @@
 {
-  "diagnostic.errorSign": "E",
-  "diagnostic.infoSign": "I",
   "diagnostic.warningSign": "W",
   "diagnostic.hintSign": "H",
   "diagnostic.messageTarget": "echo",
@@ -12,7 +10,6 @@
   "coc.preferences.formatOnSaveFiletypes": ["python", "rust", "json"],
   "coc.preferences.rootPatterns": [".git", "poetry.lock", "package-lock.json"],
   "python.pythonPath": "/usr/bin/python3",
-  "python.venvPath": "/mnt/d/wsl-pypoetry/Cache/virtualenvs",
   "python.formatting.provider": "black",
   "python.analysis.diagnosticSeverityOverrides": {
     "reportGeneralTypeIssues": "none"
