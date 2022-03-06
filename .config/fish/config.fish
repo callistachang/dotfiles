@@ -14,7 +14,7 @@ end
 thefuck --alias | source
 
 set -gx GOPATH $HOME/.go
-set -gx PATH $PATH /usr/local/go/bin $GOPATH $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.npm-global/bin
+set -gx PATH $PATH /usr/local/go/bin $GOPATH $GOPATH/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.npm-global/bin
 set -gx VISUAL nvim
 set -gx EDITOR $VISUAL
 set -gx LS_COLORS 'tw=00;33:ow=01;33:'
@@ -29,10 +29,5 @@ alias mv 'mv -iv'
 alias ls 'ls --color=auto'
 
 function vi
-    nvim $argv
-end
-
-
-function vim
     nvim $argv
 end

@@ -1,5 +1,5 @@
 "<leader>+r for go run
-autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nmap <leader>r :GoRun %<CR>
 
  "<leader>+j or <leader>+k to move through quickfixes
  "<leader>+x to close quickfix buffer
