@@ -21,3 +21,18 @@ vnoremap <C-v> "*p
 
 " Save and source file
 nnoremap <C-s> :w<CR>:so %<CR>
+
+nnoremap j gj
+nnoremap k gk
+
+" Start and end of line with <Space> and <CR>
+nnoremap <silent> <CR> g$
+nnoremap <silent> <Space> g^
+
+" Redo with U instead of <C-r>
+nnoremap U <C-r>
+
+" Ctrl-C, X, and V for copy, cut, paste to system
+xnoremap <C-c> "+y
+xnoremap <C-x> "+x
+map <C-v> "+gP
