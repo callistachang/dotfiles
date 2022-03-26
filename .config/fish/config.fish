@@ -31,3 +31,6 @@ alias ls 'ls --color=auto'
 function vi
     nvim $argv
 end
+
+#set fish_key_bindings fish_user_key_bindings
+fzf_configure_bindings --directory=\ep 
