@@ -32,5 +32,9 @@ function vi
     nvim $argv
 end
 
-#set fish_key_bindings fish_user_key_bindings
+bind yy fish_clipboard_copy
+bind Y fish_clipboard_copy
+bind p fish_clipboard_paste
+set fish_key_bindings fish_user_key_bindings
+
 fzf_configure_bindings --directory=\ep 
