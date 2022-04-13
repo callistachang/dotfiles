@@ -59,7 +59,6 @@ source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/chadtree.vim
 source ~/.config/nvim/general.vim
 source ~/.config/nvim/nerdcommenter.vim
-source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/lightline.vim
 source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/markdown-preview.vim
@@ -69,3 +68,4 @@ source ~/.config/nvim/vim-go.vim
 source ~/.config/nvim/vim-prettier.vim
 source ~/.config/nvim/vim-tmux-navigator.vim
 source ~/.config/nvim/coc.vim
+source ~/.config/nvim/keybindings.vim

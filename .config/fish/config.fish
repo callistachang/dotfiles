@@ -13,11 +13,11 @@ end
 
 thefuck --alias | source
 
-set -gx GOPATH $HOME/.go
-set -gx PATH $PATH /usr/local/go/bin $GOPATH $GOPATH/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.npm-global/bin
-set -gx VISUAL nvim
-set -gx EDITOR $VISUAL
-set -gx LS_COLORS 'tw=00;33:ow=01;33:'
+set -U GOPATH $HOME/.go
+#set -U PATH $PATH /usr/local/go/bin $GOPATH $GOPATH/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.npm-global/bin
+set -U VISUAL nvim
+set -U EDITOR $VISUAL
+set -U LS_COLORS 'tw=00;33:ow=01;33:'
 
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cp 'cp -riv'
@@ -35,6 +35,7 @@ end
 bind yy fish_clipboard_copy
 bind Y fish_clipboard_copy
 bind p fish_clipboard_paste
-set fish_key_bindings fish_user_key_bindings
+#set fish_key_bindings fish_user_key_bindings
+set fish_key_bindings fish_vi_key_bindings
 
 fzf_configure_bindings --directory=\ep 

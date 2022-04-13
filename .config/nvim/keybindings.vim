@@ -20,18 +20,21 @@ nnoremap <C-v> "*p
 vnoremap <C-v> "*p
 
 " Save and source file
-"nnoremap <C-s> :w<CR>:so %<CR>
+nnoremap <C-s> :w<CR>:so %<CR>
 
-nnoremap j gj
-nnoremap k gk
+"nnoremap j gj
+"nnoremap k gk
 
 "Start of line with H
-nnoremap <silent> H ^
+nnoremap <silent> <CR> ^
 "End of line with L
-nnoremap <silent> L g_
+nnoremap <silent> <Space> g_
 
 " Redo with U instead of <C-r>
 nnoremap U <C-r>
+
+nnoremap J <M-j>
+nnoremap K <M-k>
 
 " Ctrl-C, X, and V for copy, cut, paste to system
 "xnoremap <C-c> "+y
@@ -41,3 +44,7 @@ nnoremap U <C-r>
 " leader+w to save file
 nnoremap <leader>w :w!<cr>
 inoremap <leader>w <Esc>:w<cr>
+
+" leader+q to quit
+nnoremap <leader>q :wq!<cr>
+inoremap <leader>q <Esc>:wq<cr>
